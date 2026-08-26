@@ -1,0 +1,13 @@
+# Web Hunt Checklist (per target)
+- [ ] Scope confirmed in writing (program policy read)
+- [ ] Subdomain enum: subfinder + amass
+- [ ] Live probe: httpx (status, title, tech)
+- [ ] Vuln scan: nuclei (panel, misconfig, exposure)
+- [ ] Takeover: CNAME dangling check
+- [ ] JS: extract endpoints, keys, interesting strings
+- [ ] Auth flow mapped (login, reset, 2FA, OAuth)
+- [ ] 5 IDOR probes on object endpoints
+- [ ] 3 SSRF probes on URL-fetch features
+- [ ] 2 race-condition tests on state transitions
+- [ ] Payment/logic test in test mode
+- [ ] Writeup drafted with impact + PoC + fix
